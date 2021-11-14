@@ -1,0 +1,120 @@
+.box-bg:hover{
+   background-color: #87CEFA;
+}
+.box-bg:hover h2{
+   color: white;
+}
+.flex-2-col{
+   display: flex;
+}
+.tm-team-description-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+p::first-letter{
+   color: #87CEFA;
+   font-size: 30px;
+}
+.tm-sidebar{
+   box-shadow: 1px 1px 8px 1px #BCBABC; 
+}
+.tm-content-box{
+   box-shadow: 1px 1px 8px 3px #BCBABC;
+}
+.tm-banner{
+   box-shadow: inset 1px 1px 0px 30px #F5F5F5;
+}
+section::before{
+   content: "";
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(17% 0%, 0 0, 0 4%);
+    background: #7DBEE7;
+}
+#tmCarousel > div > div.carousel-item.active > div > div > h2{
+   color: gainsboro;
+   letter-spacing: 5px; 
+}
+h2+p{
+   font-style: italic;
+}
+div.padding-medium.flex-item.tm-team-description-container.flex-item{
+   line-height: 200%;
+}
+ div.padding-medium.flex-item.tm-team-description-container.flex-item > p{
+   text-indent: 30px;
+}
+.tm-nav-item:hover{
+background-color: #F5F5F5;
+}
+#contact{
+   position: relative;
+}
+.submit-btn{
+   position: absolute;
+   bottom: 10px;
+   right: 40px;
+   background-color: transparent;
+   color: #9FD8FB;
+   border-color: #9FD8FB;
+   width: 120px;
+   height: 40px;
+   font-size: 14px;
+   border-radius: 0px;
+}
+.submit-btn:hover{
+   background-color: #9FD8FB;
+   border-color: #9FD8FB;
+}
+.text:after {
+   content: 'New';
+   vertical-align: super;
+   color: red;
+   font-size: 12px;
+}
+.tm-content-box a:visited{
+   text-decoration: underline;
+}
+.tm-content-box a:hover{
+   text-decoration:underline double;
+}
+.box-work:nth-child(even){
+   background-color:#F2F2F2;
+}
+.box-work h2+p::first-letter{
+   color: black;
+}
+.form-group:nth-child(2)::after{
+   content: "*";
+   color: red;
+}
+@media print {
+   .tm-sidebar, #about, .heading, .blocks, #ideas, .img-contact-us, #contact {
+        display: none;
+   }
+   .tm-content-box, .tm-main-nav, .tm-team-description-container {
+      border: none;
+      box-shadow: none;
+    }
+    .flex-item img{
+       max-width: 230px;
+       max-height: 290px;
+       margin-top: 130px;
+    }
+    .tm-content-box{
+       margin: 0 auto;
+       max-width: 550px;
+       height: 100%;
+    }
+    .tm-team-description-container.flex-item > h2{
+       color: #3D5AFF;
+    }
+    footer{
+       margin-top: 10px;
+    }
+    section::before {
+      display: none;
+    }
+}
+
